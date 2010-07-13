@@ -19,7 +19,7 @@
 		"monitoringUrls": 
 		[
 			{"url": "http://www.cloudstatus.com/",	"name": "Cloud Status"},
-			{"url": "http://uptime.pingdom.com/",	"name": "NCBI Entrez Lookup"},
+			{"url": "http://uptime.pingdom.com/",	"name": "Pingdom GIGRIB"},
 	    ],
 	},
 
