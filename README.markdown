@@ -4,13 +4,21 @@ LABAM / Live Ajax Browser App Monitors
 Monitors status of any website directly in the browser, and renders results in a big-screen / projector friendly manner. To put it another way, it is a poor mans / zero-infrastructure website checking system.
 
 The status page consists of a grid representing monitored endpoints (URL:s) and the color coded representation of their reply: 
-* green=ok
-* red=error
-* yellow=recovering from recent error
+
+* green = ok
+* red = error
+* yellow = recovering from recent error
 
 Each individual "monitor" contains a sparkline style graph showing the most recent check results. This historical view of recent tests makes it possible to spot flapping services.
 
-The monitoring URLs are defined as a struct in monitoringurls.json, which gets parsed after the onLoad event. The idea is that while this file is fine if static it could just as well be created on-the-fly by some third party inventory- or network monitoring system.
+The monitoring URLs are defined as a struct in monitoringurls.json, which gets parsed after the *onLoad* event. The idea is that, while this file is fine if static, it could just as well be created on-the-fly by some third party inventory- or network monitoring system.
+
+Example
+-------
+
+The below screenshot shows what the tool looks like when you have 20+ monitoring points defined. We keep this page showing on a large screen monitor acting a sort of *information radiator* in the office.
+
+![screenshot](http://github.com/cbrunnkvist/LABAM/raw/docs/sample-screenshot.png)
 
 Caveats
 -------
