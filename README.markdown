@@ -18,7 +18,7 @@ Example
 
 The below screenshot shows what the tool looks like when you have 20+ monitoring points defined. We keep this page showing on a large screen monitor acting a sort of *information radiator* in the office.
 
-![screenshot](http://github.com/cbrunnkvist/LABAM/raw/docs/sample-screenshot.png)
+![screenshot](/cbrunnkvist/LABAM/raw/docs/sample-screenshot.png)
 
 Caveats
 -------
