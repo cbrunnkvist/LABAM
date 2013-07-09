@@ -18,13 +18,13 @@ Example
 
 The below screenshot shows what the tool looks like when you have 20+ monitoring points defined. We keep this page showing on a large screen monitor acting a sort of *information radiator* in the office.
 
-![screenshot](/cbrunnkvist/LABAM/raw/docs/sample-screenshot.png)
+![screenshot](://raw.github.com/cbrunnkvist/LABAM/docs/sample-screenshot.png)
 
 Caveats
 -------
 
 * Web browser compatibility
- * __Safari 4__: the monitor must be launched from file:// source, but then works with any site)
+ * __Safari (>4)__: the monitor must be launched from file:// source, but then works with any site)
  * __FF3.5*/IE7(?)/WK(Safari/Chrome)__: requires that monitored URLs supply [XHR Access Control][1] / Access-Control-Allow-Origin header in their response
 
 * Pages are requested directly by the web browser, and as a consequence you do indeed end up testing the network between your computer and the web server. And if your browser uses a caching web proxy, you will also end up practically testing its availability too.
