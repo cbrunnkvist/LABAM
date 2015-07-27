@@ -1,9 +1,9 @@
 LABAM / Live Ajax Browser App Monitors
 ======================================
 
-Monitors status of any website directly in the browser, and renders results in a big-screen / projector friendly manner. To put it another way, it is a poor mans / zero-infrastructure website checking system.
+Monitors status of any website directly in the browser, and renders results in a big-screen / projector friendly manner. To put it another way, it is a poor mans / zero-infrastructure website checking system. Being both agent- & serverless, it can be deployed in a drop-in fashion behind a non-permissive firewall, or in an airgapped network environment.
 
-The status page consists of a grid representing monitored endpoints (URL:s) and the color coded representation of their reply: 
+The status page consists of a grid representing monitored endpoints (URL:s) and the color coded representation of their reply:
 
 * green = ok
 * red = error
@@ -24,10 +24,8 @@ Caveats
 -------
 
 * Web browser compatibility
- * __Safari (>4)__: the monitor must be launched from file:// source, but then works with any site)
- * __FF3.5*/IE7(?)/WK(Safari/Chrome)__: requires that monitored URLs supply [XHR Access Control][1] / Access-Control-Allow-Origin header in their response
+ * __Google Chrome (>40)__: a "packaged app" should be installable directly from the [Chrome Web Store][1]
+* Pages are requested directly by the web browser, and as a consequence you do indeed end up testing the network between your computer and the web server. And if your browser uses a caching web proxy, you will also end up practically testing _its_ availability too.
+* __Alpha quality packaging__: there is currently no UI whatsoever to handle configuration of the monitoring endpoints - this must be done by directly hacking the directory where the app is unpacked to.
 
-* Pages are requested directly by the web browser, and as a consequence you do indeed end up testing the network between your computer and the web server. And if your browser uses a caching web proxy, you will also end up practically testing its availability too.
-
-
-[1]: https://developer.mozilla.org/en/HTTP_access_control
+[1]: https://chrome.google.com/webstore/apps
