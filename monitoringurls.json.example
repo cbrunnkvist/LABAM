@@ -1,27 +1,18 @@
-{"monitorGroups": 
-[
-	{	"groupName": "Production",
-		"monitoringUrls":
-		[
-			{"url": "http://intweb/",	"name": "Intranet"},
-			{"url": "http://production.internal.example.com/login",	"name": "OneApp"},
-		],
-	},
-	{	"groupName": "Development",
-		"monitoringUrls": 
-		[
-			{"url": "http://intwebdev/",	"name": "Intweb staging"},
-			{"url": "http://staging.internal.example.com/login",	"name": "OneApp staging"},
-			{"url": "http://training.internal.example.com/login",	"name": "OneApp training"},
-	    ],
-	},
-	{	"groupName": "External Dependencies",
-		"monitoringUrls": 
-		[
-			{"url": "http://www.cloudstatus.com/",	"name": "Cloud Status"},
-			{"url": "http://uptime.pingdom.com/",	"name": "Pingdom GIGRIB"},
-	    ],
-	},
-
-]
+{
+    "monitorGroups": [
+        {
+            "groupName": "Development",
+            "monitoringUrls": [
+                {"url": "http://192.168.0.1:80/",   "name": "TP-Link Router"},
+                {"url": "http://192.168.0.2:8600/", "name": "Dev server"}
+            ]
+        },
+        {
+            "groupName": "External Dependencies",
+            "monitoringUrls": [
+                {"url": "http://www.cloudstatus.com/",  "name": "Cloud Status"},
+                {"url": "http://www.camintel.com/",     "name": "ISP / CamIntel"}
+            ]
+        }
+    ]
 }
