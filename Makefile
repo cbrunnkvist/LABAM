@@ -1,10 +1,14 @@
+# name the uploadable archive
+ARCHIVE=LABAM.zip
+###################
+
 DIR=$(shell basename `pwd`)
 
-release: build/LABAM.zip
-	@echo Archive created: $(PWD)/build/LABAM.zip
+release: build/$(ARCHIVE)
+	@echo Archive created: $(PWD)/build/$(ARCHIVE)
 
-build/LABAM.zip: build *
-	cd ../ ; zip -FS -r $(PWD)/build/LABAM.zip $(DIR) -x$(DIR)/build/* -x$(DIR)/.git/*
+build/$(ARCHIVE): build *
+	cd ../ ; zip -FS -r $(PWD)/build/$(ARCHIVE) $(DIR) -x$(DIR)/build/* -x$(DIR)/.git/*
 
 build:
 	mkdir -p build
